@@ -1,0 +1,17 @@
+我有三個新聞網站，我要爬取每個記者的所有文章，使用conda環境leo3.10，先分析這幾個網站的結構，找到所有的記者資訊，存到./dataset/記者清單.json，要明確記錄記者屬於哪一個新聞網。接著分析各新聞網的結構，並設計爬蟲腳本，最後再開始爬蟲。
+文章存到./dataset/(新聞網名稱)/(記者名字)/(日期)-(文章名稱).txt
+
+
+聯合新聞網：
+https://udn.com/news/reporter/MDczNzY=
+<div class="context-box__content">可以看到熱門的記者的連結
+注意要模擬滑到底部才會載入新的文章連結
+
+中時新聞網：
+https://www.chinatimes.com/reporter/1893?chdtv
+這是其中一名記者的連結，找到更多記者。
+注意網頁下方是分頁
+
+工商時報：
+https://www.ctee.com.tw/reporter/60117
+注意網頁下方有"載入更多"按鈕
